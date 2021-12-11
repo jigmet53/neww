@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textSize="40dp"
+        android:id="@+id/s"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/p"
+
+        android:text="Please fill in this form to create an account !"
+        android:layout_below="@+id/s"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/li"
+
+        android:text="______________________________________________________________"
+        android:layout_below="@+id/p"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/li"
+        android:hint="First Name    "
+        android:id="@+id/f"
+        android:textSize="30dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/l"
+        android:textSize="30dp"
+        android:layout_below="@+id/li"
+        android:layout_toRightOf="@+id/f"
+
+        android:hint="Last Name    "/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/e"
+
+        android:hint="Email                                      "
+        android:textSize="30dp"
+        android:layout_below="@+id/f"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pi"
+        android:hint="Password                              "
+        android:textSize="30dp"
+        android:layout_below="@+id/e"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:hint="Confirm Password                "
+        android:textSize="30dp"
+        android:layout_below="@+id/pi"
+        android:id="@+id/c"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I accept the Terms of Use and Privacy policy"
+        android:id="@+id/ch"
+        android:layout_below="@+id/c"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:layout_below="@+id/ch"
+        android:background="@color/colorPrimary"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>

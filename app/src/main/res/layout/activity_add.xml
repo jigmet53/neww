@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:hint="add            "
+
+        android:id="@+id/a"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="sub                 "
+        android:id="@+id/s"
+        android:textSize="40dp"
+
+        android:layout_toRightOf="@+id/a"
+        />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="8"
+        android:id="@+id/t"
+        android:textSize="30dp"
+        android:layout_below="@+id/s"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/b1"
+        android:layout_below="@+id/t"
+        android:onClick="Check"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/b2"
+        android:onClick="Check"
+        android:layout_toRightOf="@+id/b1"
+        android:layout_below="@+id/t"
+        />
+
+</RelativeLayout>
